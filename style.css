@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    color: white;
+}
+
+html{
+    background-color: rgb(189, 224, 254);
+    height: 100vmin;
+}
+
+.font-header{
+    margin: 1rem 0rem 0rem;
+}
+
+.font-body{
+    margin: 1rem;
+}
+
+.component{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-of-type(odd){
+        background-color: rgb(189, 224, 254);
+    }
+    &:nth-of-type(even){
+        background-color: rgb(162, 210, 255);
+    }
+}
+
+.component-constraint{
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 0rem 0rem 1rem;
+    .icon{
+        color: white;
+        &:hover{
+            color: rgb(229, 229, 229);
+        }
+    }
+}
+
+.list{
+    margin: 1rem;
+    text-align: left;
+    list-style-type: square;
+}
+
+.link{
+    display: inline-flex;
+    text-decoration: none;
+    color: rgb(104, 184, 255);
+    &:hover{
+        color: rgb(57, 163, 255);
+    }
+    &:active{
+        color: rgb(0, 136, 255);
+        font-size: 0.96em;
+    }
+}
